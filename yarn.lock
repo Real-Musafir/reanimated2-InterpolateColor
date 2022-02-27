@@ -4530,7 +4530,12 @@
   dependencies:
     "react-native-codegen" "*"
 
-"react-native-reanimated@^2.4.1":
+"react-native-multithreading@^1.1.1":
+  "integrity" "sha512-ceJQRZAPjH5LfrDjb5svF4F18Ne7QR7QLQUFO0huAe+9w0hd2C3PR12ATxljo+590GXCzWRt2ruR9pY3EstFAQ=="
+  "resolved" "https://registry.npmjs.org/react-native-multithreading/-/react-native-multithreading-1.1.1.tgz"
+  "version" "1.1.1"
+
+"react-native-reanimated@^2.4.1", "react-native-reanimated@>= 2.1.0":
   "integrity" "sha512-kvf7ylGlwa5hxMQ+wpPFjQrI2c6eexf53/xRo+dvXBNefGmSYaYR5sFtD0XMMzIPQlkCB9tJ0Pu9+2WCQUY7Cg=="
   "resolved" "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-2.4.1.tgz"
   "version" "2.4.1"
