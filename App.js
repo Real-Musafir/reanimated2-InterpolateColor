@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { useState } from "react";
+import { StyleSheet, Switch, Text, View } from "react-native";
 
 const Colors = {
   dark: {
@@ -20,10 +21,17 @@ const SWITCH_TRACK_COLOR = {
 };
 
 export default function App() {
+  const [theme, setTheme] = useState("light");
   return (
     <View style={styles.container}>
-      <Text>asdf</Text>
-      <StatusBar style="auto" />
+      <Switch
+        value={theme === "dark"}
+        onValueChange={(toggled) => {
+          setTheme(toggled ? "dark" : "light");
+        }}
+        trackColor={SWITCH_TRACK_COLOR}
+        thumbColor={"violet"}
+      />
     </View>
   );
 }
